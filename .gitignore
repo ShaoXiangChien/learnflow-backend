@@ -1,0 +1,123 @@
+# ===========================
+# Python
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ===========================
+# Environment Variables
+# ===========================
+
+# IMPORTANT: Never commit API keys or secrets!
+.env
+.env.local
+.env.*.local
+
+# ===========================
+# Media Files
+# ===========================
+
+# Video files (usually too large for git)
+videos/*.mp4
+videos/*.avi
+videos/*.mov
+videos/*.mkv
+videos/*.webm
+
+# Keep the videos folder structure but ignore content
+# (The README.txt will still be tracked)
+
+# ===========================
+# IDE / Editor
+# ===========================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# Operating System
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ===========================
+# Logs and Databases
+# ===========================
+
+*.log
+*.sql
+*.sqlite
+*.db
+
+# ===========================
+# Temporary Files
+# ===========================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

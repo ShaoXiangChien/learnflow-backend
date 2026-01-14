@@ -1,0 +1,49 @@
+{
+  "id": "YOUR_VIDEO_ID",
+  "title": "Your Video Title Here 🔥",
+  "url": "http://localhost:8000/videos/your-video.mp4",
+  "thumbnail": "http://localhost:8000/videos/your-thumbnail.jpg",
+  "language": "es",
+  "difficulty": "A2",
+  "duration": 30,
+  "description": "Brief description of your video",
+  "subtitles": [
+    {
+      "start": 0,
+      "end": 5,
+      "text_target": "Spanish text here",
+      "text_native": "English translation here",
+      "words": [
+        {
+          "word": "palabra",
+          "translation": "word",
+          "pronunciation": "pah-LAH-brah",
+          "definition": "What this word means",
+          "example": "Example sentence using palabra"
+        },
+        {
+          "word": "otro",
+          "translation": "other/another",
+          "pronunciation": "OH-troh",
+          "definition": "Another word or thing",
+          "example": "Otro ejemplo aquí"
+        }
+      ]
+    },
+    {
+      "start": 5,
+      "end": 10,
+      "text_target": "Next Spanish segment",
+      "text_native": "Next English translation",
+      "words": [
+        {
+          "word": "más",
+          "translation": "more",
+          "pronunciation": "mahs",
+          "definition": "Additional amount",
+          "example": "Quiero más pizza"
+        }
+      ]
+    }
+  ]
+}

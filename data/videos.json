@@ -1,0 +1,153 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "title": "Massage Gone Wrong 💨😂",
+      "url": "http://localhost:8000/videos/video1.mp4",
+      "language": "es",
+      "difficulty": "B2",
+      "duration": 15,
+      "description": "A comedic reaction video featuring a massage therapist getting blasted by an unexpected gust of wind (likely a fart joke) with Dominican slang commentary.",
+      "subtitles": [
+        {
+          "start": 0,
+          "end": 3.5,
+          "text_target": "Ni la rosa de Guadalupe pudo hacer tanto viento",
+          "text_native": "Not even 'La Rosa de Guadalupe' could make this much wind",
+          "words": [
+            {
+              "word": "viento",
+              "translation": "wind",
+              "pronunciation": "VYEN-toh",
+              "definition": "Moving air",
+              "example": "Hace mucho viento hoy."
+            },
+            {
+              "word": "pudo",
+              "translation": "could",
+              "pronunciation": "POO-doh",
+              "definition": "Past tense of 'poder' (to be able to)",
+              "example": "No pudo venir a la fiesta."
+            },
+            {
+              "word": "tanto",
+              "translation": "so much",
+              "pronunciation": "TAN-toh",
+              "definition": "Indicates a large quantity or degree",
+              "example": "Te quiero tanto."
+            }
+          ]
+        },
+        {
+          "start": 3.5,
+          "end": 6.5,
+          "text_target": "¡El diablo! Me disparaste a quemarropa",
+          "text_native": "What the hell! You shot me point-blank",
+          "words": [
+            {
+              "word": "diablo",
+              "translation": "devil / hell",
+              "pronunciation": "DYAH-bloh",
+              "definition": "Literally 'devil', used as an interjection like 'damn' or 'hell'",
+              "example": "¿Qué diablos haces?"
+            },
+            {
+              "word": "disparaste",
+              "translation": "you shot",
+              "pronunciation": "dees-pah-RAS-teh",
+              "definition": "Second person past tense of 'disparar' (to shoot)",
+              "example": "Disparaste la foto muy rápido."
+            },
+            {
+              "word": "quemarropa",
+              "translation": "point-blank",
+              "pronunciation": "keh-mah-RROH-pah",
+              "definition": "Very close range (lit. 'burn clothes')",
+              "example": "Lo dijo a quemarropa."
+            }
+          ]
+        },
+        {
+          "start": 6.5,
+          "end": 9.5,
+          "text_target": "No te pudiste aguantar, pues. Me quemaste los pelos de la nariz",
+          "text_native": "You couldn't hold it in, huh. You burned my nose hairs",
+          "words": [
+            {
+              "word": "aguantar",
+              "translation": "to hold / endure",
+              "pronunciation": "ah-gwan-TAR",
+              "definition": "To restrain oneself or tolerate something",
+              "example": "No puedo aguantar la risa."
+            },
+            {
+              "word": "pues",
+              "translation": "well / then",
+              "pronunciation": "pwehs",
+              "definition": "Filler word often meaning 'well', 'then', or 'so'",
+              "example": "Vámonos, pues."
+            },
+            {
+              "word": "pelos",
+              "translation": "hairs",
+              "pronunciation": "PEH-lohs",
+              "definition": "Hair (usually body hair or animal fur)",
+              "example": "El gato tiene muchos pelos."
+            }
+          ]
+        },
+        {
+          "start": 9.5,
+          "end": 12.5,
+          "text_target": "y una parte de la ceja. ¡La creta!",
+          "text_native": "and part of my eyebrow. Damn it!",
+          "words": [
+            {
+              "word": "ceja",
+              "translation": "eyebrow",
+              "pronunciation": "SEH-hah",
+              "definition": "The strip of hair growing on the ridge above the eye socket",
+              "example": "Levantó una ceja."
+            },
+            {
+              "word": "parte",
+              "translation": "part",
+              "pronunciation": "PAR-teh",
+              "definition": "A piece or segment of something",
+              "example": "Es la mejor parte de la película."
+            },
+            {
+              "word": "creta",
+              "translation": "damn / crap",
+              "pronunciation": "KREH-tah",
+              "definition": "Dominican slang euphemism (softer version of a vulgarity), expressing shock or anger",
+              "example": "¡La creta, se me olvidó!"
+            }
+          ]
+        },
+        {
+          "start": 12.5,
+          "end": 15.0,
+          "text_target": "Me llenaste los pulmones",
+          "text_native": "You filled my lungs",
+          "words": [
+            {
+              "word": "llenaste",
+              "translation": "you filled",
+              "pronunciation": "yeh-NAS-teh",
+              "definition": "Second person past tense of 'llenar' (to fill)",
+              "example": "Llenaste el vaso con agua."
+            },
+            {
+              "word": "pulmones",
+              "translation": "lungs",
+              "pronunciation": "pool-MOH-nehs",
+              "definition": "Organs used for breathing",
+              "example": "Respirar aire puro es bueno para los pulmones."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
