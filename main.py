@@ -10,7 +10,7 @@ from models import (
     TranslateRequest, TranslateResponse
 )
 from services.video_service import (
-    get_all_videos, get_video_by_id, get_video_transcript
+    get_all_videos, get_video_by_id, get_video_transcript, save_quiz_to_video, get_video_quiz
 )
 from services.openai_service import generate_quiz, translate_word
 
@@ -54,9 +54,42 @@ def get_video(video_id: str):
     return video
 
 
+@app.get("/api/videos/{video_id}/quiz", response_model=Quiz)
+def get_quiz(video_id: str):
+    """Get quiz for a video - generate if not exists"""
+    try:
+        # Check if quiz already exists
+        existing_quiz = get_video_quiz(video_id)
+        if existing_quiz:
+            return existing_quiz
+        
+        # Get video and transcript
+        video = get_video_by_id(video_id)
+        if not video:
+            raise HTTPException(status_code=404, detail="Video not found")
+        
+        transcript = get_video_transcript(video_id)
+        if not transcript:
+            raise HTTPException(status_code=404, detail="Video transcript not found")
+        
+        # Generate quiz using OpenAI
+        questions = generate_quiz(transcript, video.language)
+        quiz = Quiz(video_id=video_id, questions=questions)
+        
+        # Save quiz to video data
+        save_quiz_to_video(video_id, quiz)
+        
+        return quiz
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating quiz: {str(e)}")
+
+
 @app.post("/api/quiz/generate", response_model=Quiz)
 def create_quiz(request: QuizGenerateRequest):
-    """Generate a quiz for a video"""
+    """Generate a quiz for a video (legacy endpoint)"""
     try:
         # Get transcript if not provided
         transcript = request.transcript
@@ -68,11 +101,16 @@ def create_quiz(request: QuizGenerateRequest):
 
         # Generate quiz using OpenAI
         questions = generate_quiz(transcript, request.language)
+        quiz = Quiz(video_id=request.video_id, questions=questions)
+        
+        # Save quiz to video data
+        save_quiz_to_video(request.video_id, quiz)
 
-        return Quiz(video_id=request.video_id, questions=questions)
+        return quiz
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error generating quiz: {str(e)}")
+
 
 
 @app.post("/api/translate", response_model=TranslateResponse)

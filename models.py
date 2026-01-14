@@ -28,6 +28,7 @@ class Video(BaseModel):
     duration: int
     description: Optional[str] = None
     subtitles: List[Subtitle]
+    quiz: Optional['Quiz'] = None
 
 
 class QuizQuestion(BaseModel):
